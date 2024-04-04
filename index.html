@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Message Handler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OS (LRU) Message Handler</h1>
+        <label for="limit">Number of recent messages to display:</label>
+        <input type="number" id="limit" placeholder="Enter a number">
+        <button onclick="setLimit()">Set Limit</button>
+        <br>
+        <label for="message">Enter a message:</label>
+        <input type="text" id="message" placeholder="Enter your message">
+        <button onclick="addMessage()">Submit</button>
+        <div id="messageList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
